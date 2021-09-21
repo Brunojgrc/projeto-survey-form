@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Sports Research Forum</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">Sports Research Forum</h1>
+        <p id="description">Help us define the most popular sport among respondents.</p>
+    </header>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-info">
+                <label id="name-label" for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Type your name" required>
+            </div>
+            <br>
+            <div class="form-info">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Type your e-mail" required>
+            </div>
+            <br>
+            <div class="form-info">
+                <label id="number-label" for="number">Age (optional)</label><br>
+                <input type="number" id="number" name="number" placeholder="Type your age" min="16" max="99">
+            </div>
+            <div class="form-info">
+                <p>Choose a sport category below, that you prefer.</p>
+                <select id="dropdown" required>
+                    <option disabled selected value>Select a category</option>
+                    <option value="adventure">Adventure sports</option>
+                    <option value="combat">Combat sports</option>
+                    <option value="invasion">Invasion sports</option>
+                    <option value="fieldClub">Field and club sports</option>
+                    <option value="radical">Radical sports</option>q
+                    <option value="networkWall">Network and wall sports</option>
+                </select>
+            </div>
+            <div class="form-info">
+                <p>What time of day do you prefer to exercise or play sports?</p>
+                <input id="day" type="radio" name="time-day" value="day" checked>
+                <label for="day">Day</label><br>
+                <input id="afternoon" type="radio" name="time-day" value="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+                <input id="night" type="radio" name="time-day" value="night">
+                <label for="night">Night</label>
+            </div>
+            <div class="form-info">
+                <p>Which sport do you prefer?</p>
+
+                <input id="baseball" type="checkbox" name="prefer" value="baseball">
+                <label id="baseball-label" for="baseball">Baseball</label><br>
+
+                <input id="basketball" type="checkbox" name="prefer" value="basketball">
+                <label id="basketball-label" for="basketball">Basketball</label><br>
+
+                <input id="boxing" type="checkbox" name="prefer" value="boxing">
+                <label id="boxing-label" for="boxing">Boxing</label><br>
+
+                <input id="climbing" type="checkbox" name="prefer" value="climbing">
+                <label id="climbing-label" for="climbing">Climbing</label><br>
+
+                <input id="football" type="checkbox" name="prefer" value="football">
+                <label id="football-label" for="football">Football</label><br>
+
+                <input id="volleyball" type="checkbox" name="prefer" value="volleyball">
+                <label id="volleyball-label" for="volleyball">Volleyball</label><br>
+
+                <input id="mma" type="checkbox" name="prefer" value="mma">
+                <label id="mma-label" for="mma">MMA</label><br>
+
+                <input id="surfing" type="checkbox" name="prefer" value="surfing">
+                <label id="surfing-label" for="surfing">Surfing</label><br>
+
+                <input id="skateboarding" type="checkbox" name="prefer" value="skateboarding">
+                <label id="skateboarding-label" for="skateboarding">Skateboarding</label><br>
+
+                <input id="snowboarding" type="checkbox" name="prefer" value="snowboarding">
+                <label id="snowboarding-label" for="snowboarding">Snowboarding</label><br>
+
+                <input id="soccer" type="checkbox" name="prefer" value="soccer">
+                <label id="soccer-label" for="soccer">Soccer</label><br>
+
+                <input id="tennis" type="checkbox" name="prefer" value="tennis">
+                <label id="tennis-label" for="tennis">Tennis</label><br>
+            </div>
+            <div class="form-info">
+                <p>Any comments about sports?</p>
+                <textarea id="textarea-comments" placeholder="Type you comment here..."></textarea>
+            </div>
+            <div class="form-info">
+                <button id="submit" class="submit-button" type="submit" id="button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
